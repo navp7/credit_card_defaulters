@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Credit Card Fraud Detection</h1>
+    </header>
+
+    <section>
+        <h2>Fraud Detection Application</h2>
+        <p>
+            This advanced machine learning model helps to detect potential credit defaulters based on their past credit card transactions.
+            By analyzing various features and patterns, its aim to provide a secure and reliable way to find the defaulters.
+        </p>
+        <p>
+            To get started, click on the button below to access the fraud detection feature. Upload your data file and it gives a csv with predicted result
+        </p>
+        <button onclick="redirectToDetection()">Detect Fraud</button>
+    </section>
+
+    <script>
+        function redirectToDetection() {
+            // You can define the redirection logic here, such as navigating to the fraud detection page.
+            window.location.href = '/predict';
+            alert("Redirecting to the Fraud Detection page");
+        }
+    </script>
+
+</body>
+</html>
